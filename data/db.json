@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id_user": "1",
+      "full_name": "Jesse Spencer",
+      "password": "password",
+      "email": "jesse@gmail.com",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "full_name": "Le-andre Moritz",
+      "password": "password",
+      "email": "le@gmail.com",
+      "role": "customer"
+    },
+    {
+      "id": "3",
+      "full_name": "Ashton Abrahams",
+      "password": "password",
+      "email": "ashton@gmail.com",
+      "role": "customer"
+    },
+    {
+      "id": "4",
+      "full_name": "Muda",
+      "password": "password",
+      "email": "Muda@gmail.com",
+      "role": "customer"
+    },
+    {
+      "full_name": "jodie",
+      "email": "jodie@gmail.com",
+      "password": "password",
+      "id": "_QVcEZn",
+      "role": "customer"
+    }
+  ]
+}
