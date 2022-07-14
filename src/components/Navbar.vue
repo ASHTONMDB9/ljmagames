@@ -27,6 +27,9 @@
             <router-link class="nav-link" to="/Contact">CONTACT</router-link>
         </li>
       </ul>
+      <li class="list-unstyled">
+            <router-link id="admin" class="nav-link" to="/Admin">ADMIN</router-link>
+          </li>
       <form id="bar" class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Looking for something..." aria-label="Search">
         <button class="btn btn-outline-light" type="submit">Search</button>

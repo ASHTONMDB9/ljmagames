@@ -39,7 +39,7 @@ export default {
 
 
 
-<style>
+<style scoped>
 body {
   background-color: rgb(0, 0, 0);
   background-image: radial-gradient(at 75% 27%, rgb(12, 74, 110) 0, transparent 18%), radial-gradient(at 50% 71%, rgb(88, 28, 135) 0, transparent 19%);

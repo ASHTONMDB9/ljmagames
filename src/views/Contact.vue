@@ -42,7 +42,7 @@
                                 <a href="https://www.facebook.com" target="_blank">Facebook</a>
                                 <a href="https://www.twitter.com" target="_blank">Twitter</a>
                                 <a href="https://www.instagram.com" target="_blank">Instagram</a>
-                                <a href="https://github.com">GitHub</a>
+                                <a href="https://github.com" target="_blank">GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                                 <p>For more information about our products, provide your email and we'll get back to you </p>
                             </div>
                             <div class="subscribe-form">
-                                <form action="#">
+                                <form>
                                     <input type="text" placeholder="Email Address">
                                     <button>Send</button>
                                 </form>

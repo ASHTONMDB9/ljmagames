@@ -40,7 +40,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .signUpPage {
     background-color: rgba(0, 0, 0, 0.205);
     display: flex;
