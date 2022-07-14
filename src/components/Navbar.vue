@@ -1,7 +1,9 @@
 <template>
-       <nav id="nav" class="navbar navbar-light navbar-expand-lg bg-light shadow-lg mb-5">
+       <nav id="nav" class="navbar navbar-dark navbar-expand-lg shadow-lg mb-5">
     <div class="container-fluid">
-      <a href="./index.html"><img id="navlogo" src="https://i.postimg.cc/B69qmdYG/navbar.png"></a>
+      <div class="brand">
+      <a href="./index.html"><img id="navlogo" src="https://i.postimg.cc/SNGPvJ5m/Nice-Png-game-controller-png-300397.png"></a>
+      </div>
       <a id="navbrand" class="navbar-brand fw-bold" href="./index.html">LG</a>
       <a href="./index.html"><p id="logo3">Gamers don't die they respawn, what doesn't kill you gives you XP</p></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +29,7 @@
       </ul>
       <form id="bar" class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder=" Looking for something..." aria-label="Search">
-        <button class="btn btn-outline-dark" type="submit">Search</button>
+        <button class="btn btn-outline-light" type="submit">Search</button>
       </form>
     </div>
   </div>
@@ -49,10 +51,12 @@ export default {
 .navbar {
     z-index: 1000;
     height: 80px;
+  background-color: rgb(0, 0, 0);
+  background-image: radial-gradient(at 75% 27%, rgb(12, 74, 110) 0, transparent 18%), radial-gradient(at 50% 71%, rgb(88, 28, 135) 0, transparent 19%);
 }
 .nav-link:hover {
-    text-decoration: underline black 3px;
-    color: white;
+    text-decoration: underline white 3px;
+    color: blue;
 }
 #navlogo {
     color: black;
@@ -60,11 +64,14 @@ export default {
     height: 50px;
     width: 55px;
 }
+.brand {
+  background-color: white;
+}
 #navbrand {
     margin-top: -30px;
 }
 #logo3 {
-  color: black;
+  color: white;
     margin-top: 20px;
     margin-left: -40px;
     margin-right: 165px;
