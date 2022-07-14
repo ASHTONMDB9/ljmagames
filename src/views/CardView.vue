@@ -1,5 +1,5 @@
 <template>
-  <div class="Games">
+  <div class="CardView">
 
     <div id="tv-body>">
         <div id="tv">

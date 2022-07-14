@@ -32,7 +32,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .flex {
   background-color: #000000;
   display: flex;

@@ -3,39 +3,42 @@
     <form class="box glow" @submit.prevent="login">
       <div class="log">
       <h3 id="logo2">LJMA GAMES</h3>
-      <input type="text" v-model="email" placeholder="Email">
-      <input type="text" v-model="password" placeholder="Password">
+      <input type="text" v-model="email" placeholder="Email" />
+      <input type="text" v-model="password" placeholder="Password" />
       <button id="login" type="submit">Login</button>
       <router-link to="/signUp">Don't have an account, Sign up</router-link>
+      <div id="person" v-if="user"> Welcome Back {{ user.full_name }}</div>
       </div>
     </form>
-    <div v-if="user">
-      Welcome {{ user.full_name }}
-    </div>
   </div>
 </template>
-
 <script>
+
 export default {
-  data(){
+  computed: {
+    user() {
+      return this.$store.state.user;
+    },
+  },
+  data() {
     return {
       email: "",
       password: "",
-      user: null
-    }
+    };
   },
   methods: {
-    login(){
-      fetch(`http://localhost:3000/users?email=${this.email}&password=${this.password}`)
-        .then(res => res.json())
-        .then(data => {
-          if(data.length) return this.user = data[0]
-          alert("No user found, please register")
-        })
-    }
-  }
-}
+    login() {
+      this.$store.dispatch("login", {
+        email: this.email,
+        password: this.password,
+      });
+    },
+  },
+};
 </script>
+
+
+
 <style>
 body {
   background-color: rgb(0, 0, 0);
@@ -109,5 +112,16 @@ body {
 }
 .glow::after{
   filter: blur(80px)
+}
+#person { 
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    border-color: black;
+    border-width: 10px;
+    font-size: 30px;
+    color: white;
+    text-shadow: 3px 3px 15px black;
 }
 </style>
