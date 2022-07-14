@@ -53,4 +53,14 @@ export default {
   align-content: center;
   gap: 50px;
 }
+#cards {
+  margin-top: 3%;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+#cards2 {
+  margin-right: auto;
+  margin-left: auto;
+}
 </style>

@@ -11,7 +11,7 @@
         </div>
     </div>
 
-    <h2 id="page1">GAMES</h2>
+    <h2 id="page1">PRODUCTS</h2>
       <div class="filter">
         <div class="container-fluid">
           <div class="card bg-transparent border-0 me-5 ms-5">
@@ -19,23 +19,23 @@
               
               <select class="form-select ms-3 me-3" id="track" onchange="filter2()" style="width: 200px;" aria-label="Default select example">
                 <option selected value="all">Category</option>
-                <option value="Playstation">Games</option>
-                <option value="Nintendo">Console</option>
-                <option value="X-Box">Other</option>
+                <option value="">Games</option>
+                <option value="">Console</option>
+                <option value="">Other</option>
               </select>
   
               <select class="form-select ms-3 me-3" id="nation" onchange="filter3()" style="width: 200px;" aria-label="Default select example">
                 <option selected value="all">Price</option>
-                <option value="OpenWorld">Ascending</option>
-                <option value="Racing">Descending</option>
+                <option value="">Ascending</option>
+                <option value="">Descending</option>
               </select>
               
               <select class="form-select ms-3 me-3" id="class" onchange="filter1()" style="width: 200px;" aria-label="Default select example">
-                <option selected value="all"></option>
-                <option value="4">4</option>
-                <option value="7">7</option>
-                <option value="16">16</option>
-                <option value="18">18</option>
+                <option selected value="all">Company</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
               </select>  
                     
               </div>

@@ -1,5 +1,5 @@
 <template>
-       <nav id="nav" class="navbar navbar-dark navbar-expand-lg shadow-lg mb-5">
+       <nav id="nav" class="navbar navbar-dark navbar-expand-lg">
     <div class="container-fluid">
       <div class="brand">
       <a href="./index.html"><img id="navlogo" src="https://i.postimg.cc/SNGPvJ5m/Nice-Png-game-controller-png-300397.png"></a>
@@ -15,7 +15,7 @@
             <router-link class="nav-link active" to="/">HOME</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/Games">PRODUCTS</router-link>
+            <router-link class="nav-link" to="/CardView">PRODUCTS</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/Login">LOGIN</router-link>
@@ -55,8 +55,7 @@ export default {
   background-image: radial-gradient(at 75% 27%, rgb(12, 74, 110) 0, transparent 18%), radial-gradient(at 50% 71%, rgb(88, 28, 135) 0, transparent 19%);
 }
 .nav-link:hover {
-    text-decoration: underline white 3px;
-    color: blue;
+    text-decoration: underline blue 3px;
 }
 #navlogo {
     color: black;
