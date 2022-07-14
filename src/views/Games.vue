@@ -19,8 +19,8 @@
               
               <select class="form-select ms-3 me-3" id="track" onchange="filter2()" style="width: 200px;" aria-label="Default select example">
                 <option selected value="all">Category</option>
-                <option value="Playstation">Console</option>
-                <option value="Nintendo">PC Components</option>
+                <option value="Playstation">Games</option>
+                <option value="Nintendo">Console</option>
                 <option value="X-Box">Other</option>
               </select>
   
@@ -41,10 +41,42 @@
               </div>
             </div>
           </div>
-          
         </div>
+<div class="flex">
+    <div id="body" v-for="product of product" :key="product.id">
+      <div class="everything">
+        <div id="cards" class="card col-lg-4" style="width: 290px">
+          <img v-bind:src="product.image" alt="" />
+          <h5 class="card-title">{{ product.title }}</h5>
+          <p class="card-text">{{ product.description }}</p>
+          <p>
+            <i class="fa-solid fa-bolt-lightning"></i>
+            {{ product.category }}
+          </p>
+          <p><i class="fa-solid fa-horse-head"></i> {{ product.company }}</p>
+          <p><i class="fa-solid fa-dollar-sign"></i> {{ product.price }}</p>
+        </div>
+      </div>
+      </div>
+    </div>
   </div>
 </template>
+
+<script>
+import Card from "@/components/Card.vue";
+export default {
+  components: { Card },
+  mounted() {
+    this.$store.dispatch("ShowProducts");
+  },
+  computed: {
+    product() {
+      return this.$store.state.product;
+    },
+  },
+};
+</script>
+
 
 <style>
 #tv {

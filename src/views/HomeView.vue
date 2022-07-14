@@ -18,6 +18,7 @@
     margin-top: -100px;
     background-color: white;
     height: 100vh;
+    overflow-x: hidden;
 }
 .container {
     padding-top: 50px;
