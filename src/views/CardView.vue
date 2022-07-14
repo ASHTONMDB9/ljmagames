@@ -45,16 +45,15 @@
 <div class="flex">
     <div id="body" v-for="product of product" :key="product.id">
       <div class="everything">
-        <div id="cards" class="card col-lg-4" style="width: 290px">
+        <div id="cards" class="card col-lg-4 bg-black" style="width: 290px; height: 700px;">
           <img v-bind:src="product.image" alt="" />
-          <h5 class="card-title">{{ product.title }}</h5>
-          <p class="card-text">{{ product.description }}</p>
-          <p>
-            <i class="fa-solid fa-bolt-lightning"></i>
+          <h5 class="card-title" style="color: white;">{{ product.title }}</h5>
+          <p class="card-text" style="color: white;">{{ product.description }}</p>
+          <p style="color: white;">
             {{ product.category }}
           </p>
-          <p><i class="fa-solid fa-horse-head"></i> {{ product.company }}</p>
-          <p><i class="fa-solid fa-dollar-sign"></i> {{ product.price }}</p>
+          <p style="color: white;"> {{ product.company }}</p>
+          <p style="color: white;"> {{ product.price }}</p>
         </div>
       </div>
       </div>
@@ -78,7 +77,7 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
 #tv {
     box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.4);
     border-radius:5px;
@@ -235,8 +234,9 @@ border: 1px grey solid;
     font-family: serif;
     display: flex;
     justify-content: center;
-    font-size: 300px;
+    font-size: 200px;
     text-shadow: 2px 10px 80px;
     z-index: 100;
+    margin-bottom: -100px;
 }
 </style>

@@ -2,17 +2,17 @@
   <div class="signUpPage">
     <form class="box glow" @submit.prevent="signUp">
       <div class="sign">
-        <h3 id="logo2">LJMA GAMES</h3>
+        <h3 class="mt-3" id="logo2">LJMA GAMES</h3> 
       <input type="text" v-model="full_name" placeholder="Fullname">
       <input type="text" v-model="email" placeholder="Email">
       <input type="text" v-model="password" placeholder="Password">
       <button id="signUp" type="submit">Sign Up</button>
+      <p class="text-light">Please<router-link to="/Login"> login</router-link> after signing up</p>
       <router-link to="/Login">Already a member, Log in</router-link>
+      <div id="newperson" v-if="user">Welcome to LJMA GAMES {{ user.full_name }}</div>
       </div>
     </form>
-    <div v-if="user">
-      Welcome {{ user.full_name }}
-    </div>
+    
   </div>
 </template>
 
@@ -23,27 +23,20 @@ export default {
     return {
       email: "",
       password: "",
-      user: null,
+      role:"",      
       full_name:  ""
     }
   },
-  methods: {
-    signUp(){
-     fetch('http://localhost:3000/users', {
-  method: 'POST',
-  body: JSON.stringify({
-   full_name: this.full_name,
-    email: this.email,
-    password: this.password,
-  }),
-  headers: {
-    'Content-type': 'application/json; charset=UTF-8',
-  },
-})
-  .then((response) => response.json())
-  .then((json) => console.log(json));
-    }
-  }
+  computed: {
+        user() {
+            return this.$store.state.user
+        }
+    },
+    methods: {
+        signUp() {
+           return this.$store.dispatch("signUp", {full_name: this.full_name, email: this.email, password: this.password, role: this.role} )
+    },
+}
 }
 </script>
 
@@ -116,5 +109,16 @@ export default {
 }
 .glow::after{
   filter: blur(80px)
+}
+#newperson {
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    border-color: black;
+    border-width: 10px;
+    font-size: 30px;
+    color: white;
+    text-shadow: 3px 3px 15px black;
 }
 </style>

@@ -7,7 +7,7 @@
       <input type="text" v-model="password" placeholder="Password" />
       <button id="login" type="submit">Login</button>
       <router-link to="/signUp">Don't have an account, Sign up</router-link>
-      <div id="person" v-if="user"> Welcome Back {{ user.full_name }}</div>
+      <div id="person" v-if="user"> Welcome {{ user.full_name }}</div>
       </div>
     </form>
   </div>

@@ -33,19 +33,16 @@
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 mb-50">
                         <div class="footer-widget">
-                            <div class="footer-logo">
-                                <a href="index.html"></a>
-                            </div>
                             <div class="footer-text">
                                 <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
                                 elit,Lorem ipsum dolor sit amet.</p>
                             </div>
                             <div class="footer-social-icon">
                                 <span>Follow us:</span>
-                                <a href="#">Facebook</a>
-                                <a href="#">Twitter</a>
-                                <a href="#">Instagram</a>
-                                <a href="#">GitHub</a>
+                                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                                <a href="https://github.com">GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -55,7 +52,7 @@
                                 <h3>Get in Touch</h3>
                             </div>
                             <div class="footer-text mb-25">
-                                <p>For more information about our listings, provide your email and we'll get back to you </p>
+                                <p>For more information about our products, provide your email and we'll get back to you </p>
                             </div>
                             <div class="subscribe-form">
                                 <form action="#">
@@ -79,9 +76,9 @@
                     <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                         <div class="footer-menu">
                             <ul>
-                                <li><a href=#>Home</a></li>
-                                <li><a href=#>Login</a></li>
-                                <li><a href=#>Sign up</a></li>
+                                <li><router-link to="/">Home</router-link></li>
+                                <li><router-link to="/Login">Login</router-link></li>
+                                <li><router-link to="/signUp">Sign up</router-link></li>
                             </ul>
                         </div>
                     </div>

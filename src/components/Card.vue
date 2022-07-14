@@ -32,7 +32,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .flex {
   background-color: #000000;
   display: flex;
@@ -63,4 +63,60 @@ export default {
   margin-right: auto;
   margin-left: auto;
 }
+h5 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+}
+#missing {
+  padding-bottom: 5%;
+}
+option {
+  font-family: "Racing Sans One", cursive;
+}
+#cards:hover {
+  background-color: white;
+  box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;
+  animation: gloski 0.5s linear infinite;
+  transition: box-shadow 1s;
+}
+@keyframes gloski {
+  0% {
+    box-shadow: -5px -5px 30px 5px crimson, 5px 5px 30px 5px blue;
+  }
+  50% {
+    box-shadow: 5px 5px 30px 5px yellow, -5px -5px 30px 5px purple;
+  }
+  100% {
+    box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;
+  }
+}
+  #sort {
+    box-shadow: 20px 20px 60px #000000, -20px -20px 60px #000000;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  select {
+    margin-top: 10%;
+  }
+  #profile {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
 </style>
